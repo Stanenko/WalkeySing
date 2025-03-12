@@ -17,7 +17,6 @@ const SignIn = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    console.log("🔹 Проверяем user.id:", user?.id);
     if (user?.id) {
       setUserData({ clerkId: user.id });
       router.replace("/(root)/(tabs)/home");
